@@ -3,6 +3,7 @@ From: artifacts/base:latest
 
 %runscript
 
+  echo "Nothing to do in this section"
 
 %post
  
