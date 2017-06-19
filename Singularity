@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: artifacts/base:latest 
+From: artifacts/base:1.5.1
 
 %runscript
 
