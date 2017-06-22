@@ -18,3 +18,5 @@ From: artifacts/base:1.5.3
    mkdir -p /scratchLocal/gobyweb/FILESET_AREA
    mkdir -p /scratchLocal/gobyweb/JOB_AREA
    mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY
+
+   
