@@ -18,6 +18,8 @@ From: artifacts/base:1.5.4
    mkdir -p /scratchLocal/gobyweb/FILESET_AREA
    mkdir -p /scratchLocal/gobyweb/JOB_AREA
    mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY
+   rm -fr /etc/mail
+   mkdir -p /etc/mail
 
 %test
 
