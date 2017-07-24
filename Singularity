@@ -8,22 +8,19 @@ From: artifacts/base:1.5.4
 %post
  
    echo "Here we are installing software and other dependencies for the container!"
-   mkdir /gobyweb3
-   cp ${HOME}/.bashrc /gobyweb3
-   mkdir -p /scratchLocal/gobyweb
-   mkdir -p /scratchLocal/gobyweb/gobyweb3
-   mkdir -p /scratchLocal/gobyweb/gobyweb3/ARTIFACT_REPOSITORY-PLUGINS-SDK
-   mkdir -p /scratchLocal/gobyweb/gobyweb3/FILESET_AREA
-   mkdir -p /scratchLocal/gobyweb/gobyweb3/GOBYWEB_SGE_JOBS
-   mkdir -p /scratchLocal/gobyweb/FILESET_AREA
-   mkdir -p /scratchLocal/gobyweb/JOB_AREA
-   mkdir -p /scratchLocal/gobyweb/ARTIFACT_REPOSITORY
+   mkdir /gobyweb
+   cp ${HOME}/.bashrc /gobyweb
+   mkdir -p /scratchLocal/gobyweb2
+   mkdir -p /scratchLocal/gobyweb2/ARTIFACT_REPOSITORY-dev	
+   mkdir -p /athena/campagnelab/store/data/gobyweb/dev/FILESET_AREA
+   mkdir -p /athena/campagnelab/scratch/data/gobyweb/dev/GOBYWEB_SGE_JOBS	
+
    rm -fr /etc/mail
    mkdir -p /etc/mail
 
 %test
 
-  if [ ! -d /scratchLocal/gobyweb ]; then
+  if [ ! -d /scratchLocal/gobyweb2 ]; then
 	echo "%post did not run"
 	exit 127
   fi
