@@ -14,7 +14,8 @@ From: artifacts/base:1.5.4
    mkdir -p /scratchLocal/gobyweb2/ARTIFACT_REPOSITORY-dev	
    mkdir -p /athena/campagnelab/store/data/gobyweb/dev/FILESET_AREA
    mkdir -p /athena/campagnelab/scratch/data/gobyweb/dev/GOBYWEB_SGE_JOBS	
-
+   #libs needed for the R package Cairo
+   yum install -y libcairo2-dev libxt-dev
    rm -fr /etc/mail
    mkdir -p /etc/mail
 
