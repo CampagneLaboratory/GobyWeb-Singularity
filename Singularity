@@ -15,7 +15,7 @@ From: artifacts/base:1.5.4
    mkdir -p /athena/campagnelab/store/data/gobyweb/dev/FILESET_AREA
    mkdir -p /athena/campagnelab/scratch/data/gobyweb/dev/GOBYWEB_SGE_JOBS	
    #libs needed by the R package Cairo
-   yum install -y cairo-devel cairomm-devel libjpeg-turbo-devel pango pango-devel pangomm pangomm-devel		
+   yum install -y cairo cairo-devel cairomm-devel libjpeg-turbo-devel pango pango-devel pangomm pangomm-devel giflib-devel		
    rm -fr /etc/mail
    mkdir -p /etc/mail
 
