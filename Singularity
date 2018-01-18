@@ -24,10 +24,10 @@ From: artifacts/base:1.5.4
 %test
 
   if [ ! -d /scratchLocal/gobyweb2 ]; then
-	echo "%post did not run"
+	echo "%post did not run correctly"
 	exit 127
   fi
   if [ ! -d /scratchLocal/gobyweb2/ARTIFACT_REPOSITORY-dev ]; then
-        echo "%post did not run"
+        echo "%post did not run correctly"
         exit 127
   fi
