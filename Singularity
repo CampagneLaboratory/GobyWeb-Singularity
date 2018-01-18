@@ -3,7 +3,7 @@ From: artifacts/base:1.5.4
 
 %runscript
 
-  echo "Nothing to do in this section"
+  echo "Nothing to do here"
 
 %post
  
