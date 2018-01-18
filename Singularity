@@ -19,11 +19,15 @@ From: artifacts/base:1.5.4
    yum install -y cairo cairo-devel cairomm-devel pango pango-devel pangomm pangomm-devel
    yum clean all		
    rm -fr /etc/mail
-   mkdir -p /etc/mail
+   mkdir -p /home/gobyweb/mail
 
 %test
 
   if [ ! -d /scratchLocal/gobyweb2 ]; then
 	echo "%post did not run"
 	exit 127
+  fi
+  if [ ! -d /scratchLocal/gobyweb2/ARTIFACT_REPOSITORY-dev ]; then
+        echo "%post did not run"
+        exit 127
   fi
